@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}    
+    body {
+        background-color: white;
+        font-family: 'Lato', sans-serif;
+    }
+
+    h1 {
+       margin-bottom: 40px;
+       text-align: center;
+       color: black;
+       font-size: 35px;
+       font-family: initial;
+    }
+
+    section {
+        position: relative;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    .section {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .row {
+        width: 100%;
+        flex-grow: 1;
+        display: block;
+    }
+
+    .contanier {
+        position: relative;
+        background-color: gray;
+        border: 2.5px solid black;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sub1 {
+        float: right;
+        padding: 5px;
+        width: 150px;
+        margin: -3px -2px 0 0;
+        border: 2.5px solid black;
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        color: black;
+        background-color: #D59898;
+
+    }
+
+    .sub2 {
+        float: right;
+        padding: 5px;
+        width: 150px;
+        margin: -3px -2px 0px 0;
+        border: 2.5px solid black;
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        color: white;
+        background-color: #C14543;
+
+    }
+
+    .sub3 {
+        float: right;
+        padding: 5px;
+        width: 150px;
+        margin: -3px -2px 0px 0;
+        border: 2.5px solid black;
+        text-align: center;
+        font-size: 130%;
+        font-weight: bold;
+        color: black;
+        background-color: #E5D198;
+
+    }
+
+    .content {
+        padding: 5px;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+    }
+
+    .row .colmn-md-6 {
+        border: 2px solid white;
+        background-color: gray;
+        height: 100%;
+    }
+
+    /*desktop*/
+    @media (max-width: 1200px) {
+        .section {
+            grid-template-columns: auto auto;
+        }
+
+        .row.last {
+            grid-column: 1 / span 2;
+        }
+    }
+
+    /*tablet*/
+    @media (min-width: 768px) and (max-width: 1199px) {\
+    }
+
+    /*mobile*/
+    @media (max-width: 767px) {
+        .section {
+            grid-template-columns: auto;
+        }
+
+        .row.last {
+            grid-column: auto;
+        }
+    }
